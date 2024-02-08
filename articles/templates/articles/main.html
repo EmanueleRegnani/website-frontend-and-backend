@@ -1,0 +1,40 @@
+{% extends 'articles/base.html' %}
+
+{% block content %}
+
+<h1 id='news'>- NEWS -</h1>
+    
+<section id='articles'>
+
+    {% for article in articles %}
+        {% if article.published %}
+        <div id='article'>
+            <p>{{article.text}}</p>
+            <a><h3>{{article.title}}</h3></a>
+        </div>
+        {% endif %}
+    {% endfor %}
+
+</section>
+
+<h1>- UPCOMING EVENTS -</h1>
+
+<section id='events'>
+    
+    {% for event in events %}
+        {% if event.published %}
+        <div>
+            {% if event.picture %}
+                <img src='{{ event.picture.url }}' width='375px' height='210px'>
+            {% else %}
+                <img src='../../multimedia/placeholder.png' width='375px' height='210px'>
+            {% endif %}
+            <h3>{{ event.name }}</h3>
+            <a href=''>Find out more!</a>
+        </div>
+        {% endif %}
+    {% endfor %}
+
+</section>
+
+{% endblock %}

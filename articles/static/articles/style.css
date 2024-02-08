@@ -1,0 +1,230 @@
+#nav_bar {
+    border-bottom: 2px solid green;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline: 35%;
+    padding-bottom: 10px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: green;
+}
+
+#news {
+    padding-top: 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display:flex;
+    justify-content: center;
+    color:black;
+    font-weight: bolder;
+    text-shadow: 1px 1px white, 2px 2px green;
+}
+
+#events {
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    margin-inline: 20%;
+    padding-bottom: 35px;
+}
+
+h3 {
+    color:green;
+}
+
+#events a {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color:green;
+    padding-bottom: 5px;
+    border-bottom: 1px solid green;
+}
+
+#articles {
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline: 10%;
+    padding-bottom: 30px;
+}
+
+#article>a {
+    text-align: center;
+    text-decoration: none;
+    color: green;
+}
+
+#article {
+    
+    text-align:justify;
+    border-bottom: 1px solid green;
+}
+
+#article>p {
+    width: 400px;
+    height: 200px;
+    overflow:scroll;
+    background-color: rgba(0, 121, 0, 0.082);
+    font-style: italic;
+    padding-block: 10px;
+    padding-inline: 10px;
+}
+
+#footer {
+    padding-top: 13px;
+    border-top: 2px solid green;
+}
+
+#gallery {
+    display: flex;
+    align-items: center;
+    margin-inline: 10%;
+    overflow: scroll;
+    padding-bottom: 0px;
+    border-bottom: 0px solid green;
+}
+
+#gallery div {
+    margin-inline: 10px;
+}
+
+#history {
+    margin-inline: 10%;
+    text-align: justify;
+    font-style: italic;
+    border-bottom: 1px solid green;
+}
+
+#history_header {
+    padding-top: 25px;
+    margin-inline: 10%;
+    border-top: 1px solid green;
+}
+
+#image1 {
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+
+#image2 {
+    float: right;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+#events a:hover {
+    background-color: rgba(0, 151, 0, 0.24);
+    color: black;
+}
+
+#contacts {
+    display: flex;
+    justify-content:space-evenly;
+    padding-bottom: 20px;
+    margin-inline: 40%;
+}
+
+#contacts img:hover {
+    opacity: 0.5;
+}
+
+#courses {
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline: 25%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid green;
+}
+
+#courses h3:hover {
+    background-color: rgba(0, 151, 0, 0.24);
+    color: black;
+}
+
+.invisible {
+    display:none;
+}
+
+#time_button {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: small;
+}
+
+#store {
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline: 25%;
+    padding-bottom: 30px;
+    
+}
+
+#items>li {
+    padding-bottom: 3px;
+}
+
+#varying_image:hover {
+    opacity: 50%;
+}
+
+#pricing {
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline: 30%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid green;
+
+}
+
+#table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #table td, #table th {
+    border: 1px solid #ddd;
+    padding: 6px;
+  }
+  
+  #table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #table tr:hover {background-color: #ddd;}
+  
+  #table th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: rgba(1, 121, 1, 0.685);
+    color: black;
+  }
+
+#gallery img:hover {
+    opacity: 50%;
+}
+
+#events img:hover {
+    opacity: 50%;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{% block title %} Mnemosthenics Gym {% endblock %}</title>
+
+    <link rel="stylesheet" href="/static/articles/style.css">
+</head>
+<body>
+
+    <div id='nav_bar'>
+        <div id='nav'>
+            <div>
+                <a href='./home'>Home</a>
+            </div>
+            <div>
+                <a href='./services'>Services</a>
+            </div>
+            <div>
+                <a href='./about'>About</a>
+            </div>
+        </div>
+    </div>
+
+    <!--<button id='darkMode_button' onclick="darkMode()">Dark Mode</button>*/-->
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer id='footer'>
+        <small>©2021 Andrea Muzii, Emanuele Regnani, Matteo Riccobono</small>
+    </footer>
+
+    <script type= 'text/javascript' src= '/static/articles/script.js'></script>
+
+</body>
+</html>

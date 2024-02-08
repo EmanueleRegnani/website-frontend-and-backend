@@ -1,0 +1,114 @@
+{% extends 'articles/base.html' %}
+
+{% block content %}
+
+<h1>- PRICING -</h1>
+
+<section id='pricing'>
+    <div>
+        <table id="table">
+            <tr>
+                <th>Membership</th>
+                <th>Duration</th>
+                <th>Free courses</th>
+                <th>Dietitian</th>
+                <th>App access</th>
+                <th>Other Perks</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Pro</td>
+                <td>12 months</td>
+                <td>Included</td>
+                <td>Included</td>
+                <td>Included</td>
+                <td>Special gear and clothes!</td>
+                <td>$999.99</td>
+            </tr>
+            <tr>
+                <td>Gold</td>
+                <td>11 months</td>
+                <td>Included</td>
+                <td>Not included</td>
+                <td>Included</td>
+                <td>Bring a friend for free!</td>
+                <td>$799.99</td>
+                </tr>
+                <tr>
+                <td>Standard</td>
+                <td>10 months</td>
+                <td>Not included</td>
+                <td>Not included</td>
+                <td>Not included</td>
+                <td></td>
+                <td>$599.99</td>
+                </tr>
+        </table>
+    </div>
+</section>
+
+<h1>- COURSES -</h1>
+
+<section id='courses'>
+    <div>
+        <img src= '../../multimedia/Running.jpg' width='175px'>
+        <h3>Running session</h3>
+        <div id='time_button'>
+            <button onclick="showHide('time1')"><img src='../../multimedia/Time_icon.png' width='20px'></button>
+            <p class='invisible' id='time1'>
+                Mondays, 15:00 - 16:00
+            </p>
+        </div>
+    </div>
+    <div>
+        <img src= '../../multimedia/Yoga.jpg' width='175px'>
+        <h3>Yoga classes</h3>
+        <div id='time_button'>
+            <button onclick="showHide('time2')"><img src='../../multimedia/Time_icon.png' width='20px'></button>
+            <p class='invisible' id='time2'>
+                Thursdays, 9:00 - 10:00
+            </p>
+        </div>
+    </div>
+    <div>
+        <img src= '../../multimedia/Cycling.jpg' width='175px'>
+        <h3>Weekly Cardio workout</h3>
+        <div id='time_button'>
+            <button onclick="showHide('time3')"><img src='../../multimedia/Time_icon.png' width='20px'></button>
+            <p class='invisible' id='time3'>
+                Saturdays, 17:00 - 17:30
+            </p>
+        </div>
+    </div>
+    <div>
+        <img src= '../../multimedia/Martial Arts.jpg' width='175px'>
+        <h3>Martial Arts course</h3>
+        <div id='time_button'>
+            <button onclick="showHide('time4')"><img src='../../multimedia/Time_icon.png' width='20px'></button>
+            <p class='invisible' id='time4'>
+                Tuesdays, 18:00 - 20:00
+            </p>
+        </div>
+    </div>
+</section>
+
+<h1>- STORE -</h1>
+
+<section id='store'>
+    <div>
+        <ul id=items>
+            <li><button onclick='changeSource("../../multimedia/kettlebell.png")'>view</button>  Kettlebell</li>
+            <li><button onclick='changeSource("../../multimedia/clothes.jpg")'>view</button> Fitness clothes</li>
+            <li><button onclick='changeSource("../../multimedia/Exercise_ball.jpg")'>view</button>   Exercise ball</li>
+            <li><button onclick='changeSource("../../multimedia/gear.jpg")'>view</button>    Wrist strengthener</li>
+            <li><button onclick='changeSource("../../multimedia/Ab_rollout.jpg")'>view</button>  Ab rollout</li>
+            <li><button onclick='changeSource("../../multimedia/clothes2.jpg")'>view</button>    Tracksuit</li>
+            <li><button onclick='changeSource("../../multimedia/Yoga_mat.jpg")'>view</button>    Yoga mat</li>
+        </ul>
+    </div>
+    <div>
+        <img src='../../multimedia/Yoga_mat.jpg' id="varying_image" width='200px' height='200px'>
+    </div>
+</section>
+
+{% endblock %}
